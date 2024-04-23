@@ -1,0 +1,16 @@
+.form-group {
+  margin-bottom: 1.2rem;
+  /* border: 2px solid black; */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.form-group input {
+  padding: 0.3rem;
+  outline: none;
+  width: 100%;
+}

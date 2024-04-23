@@ -1,0 +1,47 @@
+.admin-signup-form-container-pg {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-signup-form-pg {
+  width: 35%;
+  padding: 4rem;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 3.8rem;
+  margin-bottom: 3.8rem;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-group button {
+  padding: 7px 14px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .admin-form {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .admin-form {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .admin-form {
+      width: 80%;
+      padding: 2rem;
+    }
+  }

@@ -1,0 +1,30 @@
+.pg-dashboard-container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    height: 100vh;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+}
+
+.pg-dashboard-container .actions{
+    margin-left: 2rem;
+    /* border: 3px solid black; */
+}
+
+.btn{
+    padding: 7px 14px;
+}
+
+.pg-list{
+    margin-top: 2rem;
+    padding: 16px;
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    /* border: 2px solid black; */
+}

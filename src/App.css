@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.active{
+  color: rgb(145, 33, 33);
+}
+
+body{
+  background-color: #BFBCCB;
+  height: 100vh;
+}
+

@@ -1,0 +1,84 @@
+.footer{
+    /* background-color: rgb(40, 40, 88); */
+    background-color: #928a8a;
+    height: 280px;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+    padding-top: 2.2rem;
+}
+@media(max-width: 940px){
+    .footer{
+        height: auto;
+    }
+}
+
+.footer h2{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-about{
+    width: 300px;
+    text-align: justify;
+}
+
+.footer-about h2,.footer-links h2,.footer-services h2,.footer-query h2,.footer-social-links-content h2{
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 1.5rem;
+    color: #9f3737;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); */
+}
+
+.footer-fonts span{
+    margin-left: .4rem;
+    /* transition: transform 1s ease-out; */
+}
+
+.footer-fonts a{
+    text-decoration: none;
+    color: #fff;
+} 
+
+.footer-fonts a:hover{
+    color: red;
+}
+
+.footer-fonts i{
+    display: block;
+    margin-bottom: 1.4rem;
+}
+
+.footer-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-links-content{
+    background-color: #928a8a;
+    /* background-color: rgb(40, 40, 88); */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+
+.footer-social-links{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer-bottom p{
+    /* background-color: orange; */
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: .8rem;
+    padding: 1rem;
+} 

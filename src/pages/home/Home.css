@@ -1,0 +1,90 @@
+.home-container{
+  background: url(/image/home3.JPG);
+  /* background-position:center; */
+  background-size: cover;
+  height: 100vh;
+}
+
+.main{
+    height: 30vh;
+    position : absolute;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    width: 380px;
+
+  }
+  
+  
+  @media (max-width: 700px){
+    .main{
+      width: 100%;
+      bottom: 0;
+  /* margin: 0 auto; */
+
+    }
+  }
+  
+  @media (min-width: 701px){
+    .main{
+      bottom: 25%;
+      left: 32%;
+    }
+  }
+ 
+
+.site-navigation{
+  display: flex;
+  width: 100%;
+  /* margin: 0 auto; */
+  margin-top: 20rem;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem; 
+  list-style-type: none;
+  margin-left: 10rem;
+ }
+
+ @media(max-width: 706px){
+  .site-navigation{
+    flex-direction: column;
+    gap: 1rem;
+  }
+ }
+
+.site-navigation li{
+  border: 3.5px solid rgb(172, 10, 86);
+  background-color: #000;
+  border-radius: 8px;
+  /* padding: 2px 20px; */
+  margin-top: 6rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media(max-width: 706px){
+.site-navigation li{
+  margin-top: 0;
+}
+}
+
+.site-navigation li a{
+   text-decoration: none;
+   padding: 20px;
+   color: #fff;
+   font-weight: bold;
+   font-size: 1.3rem;
+ }
+
+ .site-navigation li:hover {
+  border: 3.5px solid red;
+  background-color: #fff;
+  /* color: #000; */
+ }
+
+ .site-navigation li a:hover{
+    color: #000;
+    /* background-color: #fff; */
+ }

@@ -1,0 +1,74 @@
+.card {
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 1s linear ease-in-out;
+}
+
+  .card:hover{
+    margin: 1rem 0;
+    transform:scaleY(1.10);
+    border: 1px solid rgb(217, 17, 17);
+    /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); */
+    box-shadow: 2px 2px 4px rgb(202, 65, 186);
+  }
+
+  .card-content{
+    margin-top: 0;
+    height: 125px;
+    /* background-color: green; */
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .card-btn span{
+    font-size: 1.1rem;
+  }
+
+  #card-btn1,#card-btn2{
+    border-radius: 2px;
+    border: none;
+    padding: .2rem 1rem;
+  }
+  
+  #card-btn1{
+    padding: .46rem 1.5rem;
+    background-color: rgb(60, 231, 71);
+    margin-left: 1rem;
+  }
+
+  #card-btn1:hover,#card-btn2:hover{
+    background-color: rgb(37, 235, 235);
+    color: #fff;
+  }
+
+  .card-content h2{
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .card-content .heading{
+    font-size: .95rem;
+  }
+
+  .card-content #price-tag{
+    padding-bottom: .5rem;
+  }
+
+  .card img{
+    border-radius: 8px 8px 0 0;
+    max-width: 100%;
+    min-width: 310px;
+    height: 170px;
+
+  }
+
+  @media (min-width: 600px) {
+    .card {
+      width: 310px; 
+    }
+  } 

@@ -1,0 +1,39 @@
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+
+.pg-item-list{
+    background-image: url(/image/Hotel.JPG);
+    background-size: cover;
+    height: 400px;
+}
+
+.pg-item-list .pg-home-text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 336px;
+    color: #de1313;
+}
+
+@media (max-width: 406px){
+    .pg-item-list .pg-home-text{
+        font-size: 1rem;  
+    }
+}
+
+@media (min-width: 407px){
+    .pg-item-list .pg-home-text{
+        height: 320px;
+        font-size: 1.8rem;  
+    }
+}
+
+#pg-heading{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    /* font-weight: bold; */
+}

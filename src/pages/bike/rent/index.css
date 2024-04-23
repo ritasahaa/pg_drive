@@ -1,0 +1,11 @@
+.rent-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rent-container img{
+    width: 400px;
+    height: 400px;   
+}

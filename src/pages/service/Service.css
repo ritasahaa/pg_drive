@@ -1,0 +1,76 @@
+.service-page{
+    background-image: url(../image/laptop.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+}
+
+.service-heading h3{
+    font-family: 'Cedarville Cursive', cursive;
+    /* font-family: 'Protest Revolution', sans-serif; */
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.service-heading h2{
+    color: orangered;
+    text-align: center;
+    font-weight:bolder;
+    letter-spacing: .2rem;
+}
+
+.service-heading p{
+    text-align: center;
+}
+
+.service-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding:  1.8rem 10rem;
+}
+
+@media(max-width: 840px){
+    .service-container{
+        /* gap:2rem; */
+        flex-direction: column;
+    }
+
+    .card2{
+        margin-bottom: 2rem;
+    }
+}
+
+.service-card{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(43, 217, 226);
+    transition: 1s linear ease-in-out;
+}
+
+.service-card:hover{
+    transform:scaleY(1.14);
+    cursor: pointer;
+}
+
+.service-card i{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(235, 15, 15);
+}
+
+.service-card h2{
+    color: orangered;
+    margin-bottom: 1rem;
+}
+
+.service-card p{
+    /* text-align: justify; */
+    color: #fff;
+    line-height: 1.5;
+}

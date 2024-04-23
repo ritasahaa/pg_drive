@@ -1,0 +1,29 @@
+.pg-page{
+    background: url(.https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/GenericDesktop_Banner-247ce8d….webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.pg-rentals {
+  background: url(.https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page/GenericDesktop_Banner-247ce8d….webp);
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+@media(max-width: 370px){
+  .pg-rentals {
+     flex-direction: column;
+  }
+}
+
+.pg-rentals li {
+  border: 1px solid black;
+  padding: 8px 15px;
+}
+
+.pg-rentals li a {
+  text-decoration: none;
+}

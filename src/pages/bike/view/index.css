@@ -1,0 +1,141 @@
+.view-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.view-content{
+    padding-top: 1rem;
+}
+
+.view-content h1{
+    padding-bottom: .6rem;
+    text-align: center;
+}
+
+.view-content img{
+    width: 80vh;
+    max-width: 90%;
+    height: 40vh;
+}
+
+.coupon-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.3rem;
+}
+
+.coupon-container h3{
+    margin-bottom: .4rem;
+    text-align: center;
+}
+
+.coupon-offer{
+    background-color: pink;
+    border: 2px dashed rgb(233, 150, 164);
+    padding: 1rem 0;
+}
+
+.coupon-offer p{
+    text-align: center;
+}
+
+.coupon-offer button{
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    padding: .4rem 1rem;
+    margin: .8rem 5rem;
+}
+
+.view-container-detail{
+   margin-top: 2.5rem;
+}
+
+.view-details a{
+    background-color: #fff;
+    padding: .5rem 1.5rem;
+    margin-right: .7rem;
+}
+
+.view-details a:hover{
+    border-bottom: 5px solid #00aeef;
+    transition: .3s ease-in-out;
+}
+
+.view-table{
+    width: 470px;
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+    margin: 2rem 0;
+}
+
+.view-table table {
+    border-collapse: collapse;
+}
+
+tr {
+    border: 1px solid #d0bfbf; 
+}
+
+tr,th{
+    padding: .4rem .6rem;
+}
+
+th{
+    text-align: left;
+    padding-right: 2rem;
+    border-right: 1px solid #d0bfbf;
+}
+
+td{
+    padding: 0 5rem;
+}
+
+.view-table p{
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.review p{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.view-table span{
+    color: #ff5e00;
+    font-weight: 600;
+}  
+
+.view-table h4{
+    font-weight: normal;
+    color: #da8500;
+    padding-bottom: 10px;
+    margin: 25px 0 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+#view-heading{
+    margin-bottom: 1rem;
+}
+
+#view-condition{
+    margin-bottom: 1rem;
+}
+
+#rent{
+    padding: .5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+#rent:hover{
+    background-color: #000;
+    color: #fff;
+    border: none;
+}

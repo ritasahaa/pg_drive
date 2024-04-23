@@ -1,0 +1,51 @@
+.about-heading{
+    margin: auto;
+    text-align: center;
+    color: red;
+    border-bottom: 2px solid #d5c7c7;
+    /* width: 62rem; */
+    margin: 0 2rem 0 6rem;
+}
+
+.about-us-container{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 1.6rem 6rem;
+}
+
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.about-us-content .about-head {
+    text-align: center;
+}
+
+.about-mission{
+    margin-right: 12rem;
+}
+
+.about-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about-image{
+    width: 220px;
+    border-radius: 70px 30px;
+}
+
+.scooty-image{
+    position: relative;
+    bottom: 60px;
+}
+
+.about-us-para{
+    width: 450px;
+}
+
