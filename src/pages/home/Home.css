@@ -1,6 +1,5 @@
 .home-container{
   background: url(/image/home3.JPG);
-  /* background-position:center; */
   background-size: cover;
   height: 100vh;
 }

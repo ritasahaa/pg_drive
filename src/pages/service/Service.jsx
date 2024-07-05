@@ -1,5 +1,4 @@
 import "./Service.css"
-import React from 'react'
 
 const ServicePage = () => {
   return (

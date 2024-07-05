@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { BikeContext } from "../context";
+import { BikeContext } from "../context/BikeContext";
 import "./Card.css";
 
 const Card = ({ id, title, description, imageUrl,price1,price2,type }) => {
@@ -40,7 +40,7 @@ const Card = ({ id, title, description, imageUrl,price1,price2,type }) => {
           <button id="card-btn2" onClick={handleViewDetails}>
           <span>&#x1F441;</span> View
           </button>
-          <Link to="/bike-rental/rent"><button id="card-btn1">Rent</button></Link>
+          <Link to="/login"><button id="card-btn1">Rent</button></Link>
         </div>
       </div>
     </div>

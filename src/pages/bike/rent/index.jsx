@@ -1,6 +1,6 @@
 import "./index.css";
 
-const BikeRent = () => {
+const BikePgRent = () => {
   return (
     <div className="rent-container">
       <img src="/image/aryan.jpeg" alt="scanner"/> 
@@ -8,4 +8,4 @@ const BikeRent = () => {
   )
 }
 
-export default BikeRent
+export default BikePgRent

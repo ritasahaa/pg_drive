@@ -1,6 +1,7 @@
 import React, { useContext,useState } from "react";
 import { Link,useParams } from "react-router-dom";
-import { BikeContext } from "../../../context";
+import { BikeContext } from "../../../context/BikeContext";
+import { PgContext } from "../../../context/PgContext";
 import "./index.css";
 
 const BikeViewDetailPage = () => {

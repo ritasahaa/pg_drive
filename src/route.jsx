@@ -12,68 +12,58 @@ import ServicePage from "./pages/service/Service";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 
-// bike rental pages
-import BikeRentPage from "./pages/bike/home";
+// user login
+import Login from "./pages/userAdmin-LoginSignup";
 
-import BikeRent from "./pages/bike/rent";
-
+// bike rental pages-----
+import BikePgRent from "./pages/bike/rent";
 import BikeViewDetailPage from "./pages/bike/view";
 import BikeRentingPage from "./pages/bike/rental";
-import BikeAdminpageSignup from "./pages/bike/admin/signup/AdminSignup";
-import BikeAdminpageLogin from "./pages/bike/admin/login/AdminLogin";
 import BikeAdminDashboard from "./pages/bike/dashboard";
 
-// pg rental pages
-import PGRentPage from "./pages/pg/home";
+// pg rental pages-----
 import PGRentingPage from "./pages/pg/rental";
-import PGAdminpageSignup from "./pages/pg/admin/signup/AdminSignup";
-import PGAdminpageLogin from "./pages/pg/admin/login/AdminLogin";
 import PGAdminDashboard from "./pages/pg/dashboard";
 
+// dashboard----
+// import userDashboard from "./pages/Dashboard/userDashboard"
+
 // context
-import { BikeProvider } from "./context";
+import { BikeProvider } from "./context/BikeContext";
+import { PgProvider } from "./context/PgContext";
+
 // Define the RouteConfig component
 const RouteConfig = () => {
   return (
     <Router>
       <Header />
       <BikeProvider>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/service" element={<ServicePage />} />
+        <PgProvider>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/service" element={<ServicePage />} />
 
-          {/* <Route path="/bike-rental" element={<BikeRentPage />} /> */}
-          <Route path="/bike-rental/home" element={<BikeRentingPage />} />
-          <Route path="/bike-rental/rent" element={<BikeRent />} />
-          <Route
-            path="/bike-rental/:bikeId/view/details"
-            element={<BikeViewDetailPage />}
-          />
-          <Route
-            path="/bike-rental/admin/dashboard"
-            element={<BikeAdminDashboard />}
-          />
+            {/* login route--- */}
+            <Route path="/login" element={<Login/>}/>
 
-          <Route
-            path="/bike-rental/admin/signup"
-            element={<BikeAdminpageSignup />}
-          />
-          <Route
-            path="/bike-rental/admin/login"
-            element={<BikeAdminpageLogin />}
-          />
+            {/* bike route---- */}
+            <Route path="/bike-rental/home" element={<BikeRentingPage />} />
+            <Route path="/rent" element={<BikePgRent />} />
+            <Route
+              path="/bike-rental/:bikeId/view/details"
+              element={<BikeViewDetailPage />}
+            />
 
-        {/* <Route path="/pg-rental" element={<PGRentPage />} /> */}
-        <Route path="/pg-rental/home" element={<PGRentingPage />} />
-        <Route path="/pg-rental/admin/signup" element={<PGAdminpageSignup />} />
-        <Route path="/pg-rental/admin/login" element={<PGAdminpageLogin />} />
-        <Route
-          path="/pg-rental/admin/dashboard"
-          element={<PGAdminDashboard />}
-        />
-      </Routes>
+            {/* dashboard---- */}
+            {/* <Route path="/userdashboard"  element={<userDashboard />}></Route> */}
+            
+            {/* pg route----- */}
+            <Route path="/pg-rental/home" element={<PGRentingPage />} />
+            {/*  */}
+          </Routes>
+        </PgProvider>
       </BikeProvider>
 
       <Footer />
@@ -83,24 +73,24 @@ const RouteConfig = () => {
 
 export default RouteConfig;
 
-// signup form page (/pg-rental/admin)
 
-// Name
-// Age
-// Sex
-// email
-// password
-// confirmpassword
 
-// Link : Login (clicking will take you to login page)
+// Import comment-----
 
-// submit button
+// import BikeRentPage from "./pages/bike/home";
+// import BikeAdminpageSignup from "./pages/bike/admin/signup/AdminSignup";
+// import BikeAdminpageLogin from "./pages/bike/admin/login/AdminLogin";
+// import PGRentPage from "./pages/pg/home";
+// import PGAdminpageSignup from "./pages/pg/admin/signup/AdminSignup";
+// import PGAdminpageLogin from "./pages/pg/admin/login/AdminLogin";
 
-// Login form: login page (/pg-rental/admin/login)
+// Route comment-----
 
-// email
-// password
-
-// Link : Signup (clicking will take you to Signup page)
-
-// submit button
+{/* <Route path="/bike-rental" element={<BikeRentPage />} /> */}
+{/* <Route path="/bike-rental/admin/signup" element={<BikeAdminpageSignup />} />
+<Route path="/bike-rental/admin/login" element={<BikeAdminpageLogin />}/> */}
+{/* <Route path="/pg-rental" element={<PGRentPage />} /> */}
+{/* <Route path="/pg-rental/admin/signup" element={<PGAdminpageSignup />} />
+<Route path="/pg-rental/admin/login" element={<PGAdminpageLogin />} /> */}
+{/* <Route path="/pg-rental/admin/dashboard" element={<PGAdminDashboard />} /> */}
+{/* <Route path="/bike-rental/admin/dashboard" element={<BikeAdminDashboard />} /> */}
