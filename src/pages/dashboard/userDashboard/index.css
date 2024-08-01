@@ -1,0 +1,16 @@
+.linkCss {
+    display: flex;
+    align-items: center;
+    height: 66px;
+  }
+  
+  .linkCss:hover {
+    background-color: #eb9e34;
+    color: white;
+  }
+  
+  .divCss {
+    display: flex;
+    padding-left: 62px;
+  }
+  

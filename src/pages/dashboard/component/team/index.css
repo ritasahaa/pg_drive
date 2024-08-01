@@ -1,0 +1,23 @@
+.bgSizes {
+    background-color: aqua;
+  }
+  
+  .spans {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+  }
+  
+  p:hover + span {
+    display: block;
+  }
+  
+  /* country */
+  
+  .card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  

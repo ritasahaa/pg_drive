@@ -6,7 +6,7 @@
   cursor: pointer;
   background-color: #fff;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  transition: 1s linear ease-in-out;
+  transition: 9s linear ease-in-out;
 }
 
   .card:hover{
@@ -57,13 +57,13 @@
     padding-bottom: .5rem;
   }
 
-  .card img{
+  /* .card img{
     border-radius: 8px 8px 0 0;
     max-width: 100%;
-    min-width: 309px;
+    max-width: 90%;
+    min-width: 270px;
     height: 170px;
-
-  }
+  } */
 
   @media (min-width: 600px) {
     .card {
